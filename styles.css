@@ -308,13 +308,10 @@ body {
   margin-bottom: 30px;
 }
 
-.filter-bar {
+.filter-inner {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-}
-
-.filter-inner {
   width: 100%;
 }
 
@@ -360,11 +357,13 @@ body {
 .event-card {
   background: var(--mid);
   border: 1px solid var(--border);
-  padding: 30px;
+  padding: 0;
   transition: all 0.3s ease;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .event-card:hover {
@@ -373,11 +372,40 @@ body {
   box-shadow: 0 15px 35px rgba(201, 168, 76, 0.1);
 }
 
-.event-card h3 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: var(--white);
+/* EVENT IMAGE */
+.event-image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: var(--dark);
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image {
+  transform: scale(1.05);
+}
+
+/* EVENT CONTENT */
+.event-content {
+  padding: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-content.editing {
+  background: rgba(201, 168, 76, 0.1);
+  outline: 2px solid var(--gold);
+}
+
+.event-content[contenteditable="true"]:focus {
+  outline: none;
 }
 
 .event-year {
@@ -387,6 +415,13 @@ body {
   letter-spacing: 1px;
   margin-bottom: 12px;
   font-weight: 600;
+}
+
+.event-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--white);
 }
 
 .event-company {
@@ -420,6 +455,12 @@ body {
   color: var(--white);
 }
 
+.event-detail span[contenteditable="true"]:focus {
+  background: rgba(201, 168, 76, 0.2);
+  outline: 1px solid var(--gold);
+  padding: 2px 4px;
+}
+
 .event-highlight {
   border-top: 1px solid var(--border);
   padding-top: 15px;
@@ -428,6 +469,29 @@ body {
   color: var(--white);
   font-style: italic;
   line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.event-highlight[contenteditable="true"]:focus {
+  background: rgba(201, 168, 76, 0.1);
+  outline: 1px solid var(--gold);
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* EDIT HINT */
+.edit-hint {
+  font-size: 11px;
+  color: var(--gold);
+  text-align: center;
+  padding: 10px;
+  background: rgba(201, 168, 76, 0.05);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.event-card:hover .edit-hint {
+  opacity: 1;
 }
 
 /* FOOTER */
@@ -488,5 +552,9 @@ body {
 
   .event-grid {
     grid-template-columns: 1fr;
+  }
+
+  .event-image-wrapper {
+    height: 250px;
   }
 }

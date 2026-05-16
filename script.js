@@ -15,23 +15,53 @@ function renderEvents(eventsToShow) {
   const grid = document.getElementById("eventGrid");
   grid.innerHTML = "";
 
-  eventsToShow.forEach((event) => {
+  eventsToShow.forEach((event, index) => {
     const card = document.createElement("div");
     card.className = "event-card";
+    card.setAttribute("data-event-index", index);
+    
     card.innerHTML = `
-      <div class="event-year">${event.year}</div>
-      <h3>${event.name}</h3>
-      <div class="event-company">${event.client}</div>
-      <div class="event-type">${event.type}</div>
+      <div class="event-image-wrapper">
+        <img src="${event.image}" alt="${event.name}" class="event-image">
+      </div>
       
-      <div class="event-detail"><strong>Role:</strong> ${event.role}</div>
-      <div class="event-detail"><strong>Location:</strong> ${event.location}</div>
-      ${event.attendance ? `<div class="event-detail"><strong>Attendance:</strong> ${event.attendance}</div>` : ""}
-      ${event.budget ? `<div class="event-detail"><strong>Budget:</strong> ${event.budget}</div>` : ""}
+      <div class="event-content" contenteditable="true" data-field="highlights">
+        <div class="event-year">${event.year}</div>
+        <h3 class="event-name" contenteditable="true" data-field="name">${event.name}</h3>
+        <div class="event-company" contenteditable="true" data-field="client">${event.client}</div>
+        <div class="event-type">${event.type}</div>
+        
+        <div class="event-detail"><strong>Role:</strong> <span contenteditable="true" data-field="role">${event.role}</span></div>
+        <div class="event-detail"><strong>Location:</strong> <span contenteditable="true" data-field="location">${event.location}</span></div>
+        ${event.attendance ? `<div class="event-detail"><strong>Attendance:</strong> <span contenteditable="true" data-field="attendance">${event.attendance}</span></div>` : ""}
+        ${event.budget ? `<div class="event-detail"><strong>Budget:</strong> <span contenteditable="true" data-field="budget">${event.budget}</span></div>` : ""}
+        
+        <div class="event-highlight" contenteditable="true" data-field="keyAchievement">"${event.keyAchievement}"</div>
+      </div>
       
-      <div class="event-highlight">"${event.keyAchievement}"</div>
+      <div class="edit-hint">Click to edit</div>
     `;
+    
     grid.appendChild(card);
+  });
+  
+  // Add edit functionality
+  addEditListeners();
+}
+
+// Add listeners for editable content
+function addEditListeners() {
+  const editableElements = document.querySelectorAll("[contenteditable='true']");
+  
+  editableElements.forEach((el) => {
+    el.addEventListener("focus", function() {
+      this.parentElement.classList.add("editing");
+    });
+    
+    el.addEventListener("blur", function() {
+      this.parentElement.classList.remove("editing");
+      // You can save changes here to localStorage if desired
+    });
   });
 }
 
@@ -55,5 +85,5 @@ document.querySelectorAll(".filter-btn").forEach((btn) => {
   });
 });
 
-// Initial render - show all events
+// Initial render - show all events (already in chronological order in data.js)
 renderEvents(events);
