@@ -76,7 +76,7 @@ const events = [
     attendance: "25 top sales leaders & their +1's",
     highlights: "Four Seasons accommodation, custom Agafay Desert party, curated luxury experiences",
     keyAchievement: "Orchestrated premium incentive trip; strong satisfaction from luxury-focused audience",
-    image: "https://ibb.co/ccpRMzXL",
+    image: "https://i.ibb.co/wNb83Drs/Club-26-Full-group-1.jpg",
     tags: ["Incentive Trip", "Luxury", "Travel"]
   },
   {
@@ -124,7 +124,7 @@ const events = [
     attendance: "75K+ (festival)",
     highlights: "Aggregated sales data across Fanatics Retail, Mitchell & Ness, Lids; validated product line",
     keyAchievement: "First proprietary Fanatics Fest collection ranked #2 in sales across all major leagues; drove significant revenue",
-    image: "https://ibb.co/wts1PNJ",
+    image: "https://i.ibb.co/V6m8zWH/ffnyc-merch.jpg",
     tags: ["Product Launch", "Consumer Festival"]
   },
   {
@@ -140,7 +140,7 @@ const events = [
     attendance: "30,000+",
     highlights: "5 simultaneous stages, 100+ talent, 60+ programs",
     keyAchievement: "Coordinated complex multi-stage operations with flawless execution and real-time troubleshooting",
-    image: "https://ibb.co/TqTsTkrq",
+    image: "https://i.ibb.co/5W3ksnpw/wwe-world-cbs-news.jpg",
     tags: ["Consumer Festival", "Entertainment"]
   },
   {
@@ -156,7 +156,7 @@ const events = [
     attendance: "75,000+",
     highlights: "3 stages, 200+ talent, 60+ programs, 95% on-time delivery",
     keyAchievement: "Multi-Stage Producer, VIP Greenroom Designer",
-    image: "https://ibb.co/DHkSLnss",
+    image: "https://i.ibb.co/XrpvVTNN/Snapinst-app-455916125-1221289658895509-2898304003668659935-n-1080.jpg",
     tags: ["Consumer Festival", "Large-Scale"]
   },
   {
@@ -172,7 +172,7 @@ const events = [
     attendance: "50-500",
     highlights: "Creator celebration events, brand partnership activations, scalable run-of-show templates",
     keyAchievement: "Developed repeatable frameworks that standardized event execution across creator portfolio",
-    image: "https://ibb.co/4QG044W",
+    image: "https://i.ibb.co/zTpRGNMW/HOUSEPLANT-X-SHOPIFY-CREATOR-TEAM.jpg",
     tags: ["Team Building", "Brand Activation"]
   },
   {
@@ -220,7 +220,7 @@ const events = [
     attendance: "800+",
     highlights: "Curated designer brand showcase, VIP access, A-list attendees",
     keyAchievement: "Successful brand launch that strengthened creator partnerships",
-    image: "https://ibb.co/MDs2sMVQ",
+    image: "https://i.ibb.co/b5D6hzzH/hidden-promo.webp",
     tags: ["Pop-up Event", "Brand Launch"]
   },
   {
@@ -236,7 +236,7 @@ const events = [
     attendance: "400+",
     highlights: "Ethical tech summit with speakers, production issues resolved in real-time, crowd management",
     keyAchievement: "Praised as 'major reason the day went smoothly' and 'must-have for any team'; demonstrated calm leadership under pressure",
-    image: "https://ibb.co/jvvPvvtV",
+    image: "https://images.squarespace-cdn.com/content/v1/60355084905d134a93c099a8/b2e49435-2af7-47fa-ab7b-6f662736a106/ATH_revised_logo.png?format=1500w",
     tags: ["Conference", "Community"]
   },
   {
@@ -252,7 +252,7 @@ const events = [
     attendance: "15-100",
     highlights: "100+ private events, brand partnerships, celebrity talent coordination",
     keyAchievement: "Successfully produced approximately 100 events over 8 years with consistent high quality",
-    image: "https://ibb.co/nSmRHRM",
+    image: "https://i.ibb.co/NzC7872/Gabriele-DEB-EV.jpg",
     tags: ["Private Event", "Celebrity"]
   },
   {
@@ -268,7 +268,7 @@ const events = [
     attendance: "Daily events",
     highlights: "Staffing, licensing compliance, facilities management, budget oversight",
     keyAchievement: "Successfully managed brick-and-mortar venue operations while maintaining food standards and event execution",
-    image: "https://via.placeholder.com/400x250?text=Venue+Operations",
+    image: "https://i.ibb.co/kssjhFZh/Gabriele-AND-DEB.jpg",
     tags: ["Food & Beverage", "Operations"]
   },
   {
@@ -284,7 +284,7 @@ const events = [
     attendance: "N/A (streaming)",
     highlights: "Food + tech + lifestyle exploration; professional production and talent coordination",
     keyAchievement: "Successfully developed and executed series concept with celebrity talent and premium production value",
-    image: "https://ibb.co/KpSRkp8Q",
+    image: "https://i.ibb.co/sdzkGdXD/Copy-of-fbteaser-01-png.jpg",
     tags: ["Media Production", "Food Festival"]
   },
   {
@@ -316,7 +316,7 @@ const events = [
     attendance: "N/A",
     highlights: "Cataloged decades of fashion and entertainment imagery in Adobe Lightroom; editorial selection for memoir",
     keyAchievement: "Managed substantial historical archive with meticulous tagging and organization for publication",
-    image: "https://ibb.co/wFFVK1tK",
+    image: "https://www.interviewmagazine.com/wp-content/uploads/2015/06/img-debi-mazar_160030968597.jpg",
     tags: ["Community", "Creative Services"]
   },
   {
@@ -332,7 +332,7 @@ const events = [
     attendance: "200-400",
     highlights: "All styling and art direction for runway, seasonal lookbooks, marketing campaigns",
     keyAchievement: "Founded and ran children's apparel brand with consistent quality and professional presentation",
-    image: "https://ibb.co/nMdZ90CC",
+    image: "https://i.ibb.co/B2WdbPNN/lisa-and-the-girls-2.jpg",
     tags: ["Fashion Show", "Pop-up Event"]
   },
   {
